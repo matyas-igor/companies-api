@@ -23,7 +23,7 @@ export const typeDefs = gql`
     offset: Int!
     limit: Int!
     total: Int!
-    edges: [Company]!
+    nodes: [Company]!
   }
 
   type Info {
@@ -33,6 +33,6 @@ export const typeDefs = gql`
 
   type Query {
     info: Info!
-    companies(q: String, cities: [String]!, specialities: [String]!, offset: Int, limit: Int, sortBy: SortBy): CompaniesConnection!
+    companies(q: String, cities: [String], specialities: [String], offset: Int, limit: Int, sortBy: SortBy): CompaniesConnection!
   }
 `

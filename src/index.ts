@@ -1,12 +1,13 @@
 import { ApolloServer } from 'apollo-server'
 import { typeDefs } from './schema'
-import { BlocksAPI } from './sources/blocks'
-import { BlocksQuery } from './queries/blocks'
+import { CompaniesQuery } from './queries/companies'
+import { InfoQuery } from './queries/info'
 import { logger } from './helpers/logs'
 
 const resolvers = {
   Query: {
-    ...BlocksQuery,
+    ...InfoQuery,
+    ...CompaniesQuery,
   },
 }
 
@@ -15,11 +16,6 @@ const server = new ApolloServer({
   resolvers,
   introspection: true,
   playground: true,
-  dataSources: () => {
-    return {
-      blocksAPI: new BlocksAPI(),
-    }
-  },
 })
 
 server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
