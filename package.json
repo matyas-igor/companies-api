@@ -1,0 +1,44 @@
+{
+  "name": "construction-companies-api",
+  "version": "1.0.0",
+  "description": "Simple Apollo's GraphQL API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "build": "tsc",
+    "lint": "eslint --ext .tsx,.ts,.js,.jsx ./ --ignore-path .gitignore",
+    "lint:fix": "eslint --ext .tsx,.ts,.js,.jsx --fix ./ --ignore-path .gitignore",
+    "develop": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matyas-igor/construction-companies-api.git"
+  },
+  "keywords": [],
+  "author": "Igor Matias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matyas-igor/blocks-api/issues"
+  },
+  "homepage": "https://github.com/matyas-igor/blocks-api#readme",
+  "dependencies": {
+    "apollo-server": "^2.19.0",
+    "graphql": "^15.4.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.10",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
+  },
+  "engines": {
+    "node": ">=12.x"
+  }
+}
