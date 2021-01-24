@@ -14,7 +14,7 @@ const main = () => {
     .map((u, index) => ({
       id: index + 1,
       name: chance.company(),
-      logo: `http://tinygraphs.com/squares/${chance.string({ length: 12, casing: 'lower', alpha: true })}?theme=bythepool&numcolors=4&size=220&fmt=svg`,
+      logo: `https://icotar.com/avatar/${chance.string({ length: 12, casing: 'lower', alpha: true })}`,
       speciality: specialities[chance.integer({ min: 0, max: specialities.length - 1 })],
       city: cities[chance.integer({ min: 0, max: cities.length - 1 })],
     }))
