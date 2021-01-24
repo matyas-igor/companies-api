@@ -30,3 +30,23 @@ Query examples:
   }
 }
 ```
+
+# Available Scripts
+
+In the project directory, you can run:
+
+### `npm run build`
+
+Builds the app for production to the `dist` folder.
+
+### `npm run start`
+
+Runs the previously built app.
+
+### `npm run develop`
+
+Instantly start the app in a development mode.
+
+### `npm run db:generate`
+
+Regenerate database of companies.
